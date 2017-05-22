@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/ja2-1.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		
+		<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.animate1.0.2.min.js" ></script>
+		
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			body,html{
+				height: 100%;
+				width: 100%;
+			}
+			.swiper-container{
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				
+			}
+			.swiper-slide p{
+				position:absolute;
+				font-weight: bold;
+				color: white;
+				font-size:1.5em;
+				
+				
+			}
+			img{
+				position: absolute;
+			}
+			.oneb{
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				
+			}
+			.onea{
+				width: 50%;
+				top: 50px;
+				left: 30%;
+			}
+			.onec{
+				width: 20%;
+				top: 45%;
+				left: 42%;
+			}	
+			.oned{
+				top: 49%;
+				left: 45%;
+				
+			}
+			.twob{
+				width: 40%;
+				bottom: 15%;
+				left: 0;
+				opacity: 0.8;
+			}
+			.twoa{
+				width: 30%;
+				bottom: 30%;
+				right: 0;
+			}
+			.twoc{
+				right:2%;
+				bottom: 34%;
+			}
+			.twod{
+				left: 2%;
+				bottom:25% ;
+			}
+			.therea{
+				width: 50%;
+				top: 35%;
+				left: 25%;
+			}
+			.thereb{
+				width: 60%;
+				left: 0;
+				top: 8%;
+			}
+			.therec{
+				left: 5%;
+				top: 10%;
+			}
+			.thered{
+				width: 10%;
+				left: 10%;
+				bottom: 20%;
+			}
+			.theree{
+				width: 10%;
+				right: 10%;
+				bottom: 10%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+						<img swiper-animate-effect='bounceInLeft' class="ani oneb" src="img/27f991fa-e5f0-4216-aabe-d80be9dea8b8-9347.png"/>
+						<img swiper-animate-effect="bounceIn" swiper-animate-delay="0.3s" class="ani onea" src="img/b5543dff-afa1-4842-aa54-a796baec1ed5-4162.png" />
+						<img swiper-animate-effect="fadeIn" class="onec ani" swiper-animate-delay="0.7s"  swiper-animate-duration="0.5s" swiper-animate-delay="0.6s" src="img/4d7cb8e3-103f-4adc-94bf-a1e446b776ef-8892.png"/>
+						<p swiper-animate-effect="rotateIn" swiper-animate-delay="0.6s" class="ani oned">上海大众<br />6月抢实惠</p>
+
+				</div>
+				<div class="swiper-slide">
+						<img src="img/be68fd3b-8fda-4893-97f3-6da02a825cc5-9544.png" style="height:100%;margin: 0 auto;"/>
+						<img swiper-animate-effect='bounceInRight' class="ani twoa" src="img/b9356be2-7de2-40a8-adf7-4b55835dd35a-9399.png"/>
+						<img swiper-animate-effect='bounceInLeft' swiper-animate-delay="0.6s" class="ani twob" src="img/a35b4465-3fdd-4bd9-bd6a-9913042835e9-6372.png"/>
+						<p swiper-animate-effect="bounceInRight" swiper-animate-delay="0.3s" class="ani twoc">试驾有红包</p>
+						<p swiper-animate-effect="bounceInLeft" swiper-animate-delay="0.9s" class="ani twod">完成试驾体验后即可<br />享受666元现金抵用卷<br />(仅限抵充车款)</p>
+					
+				</div>
+				<div class="swiper-slide">
+						
+						<img src="img/3076d2ca-4476-4443-848c-6155015bebdd-6290.png" style="height: 100%;width:100%;margin: 0 auto;"/>
+						<img swiper-animate-effect='bounceInLeft' class="ani thereb" src="img/96dbfca7-b0f9-41c2-bf38-6fb2169f8a0f-5192.png"/>
+						<p swiper-animate-delay="0.3s" swiper-animate-effect='bounceInLeft' class="ani therec">更多车型优惠，详询上海大众4s店</p>
+						<img swiper-animate-delay="0.6s" swiper-animate-effect='bounceInRight' class="ani therea" src="img/920e4960-be83-445d-9a79-4fae555410a7-1496.png"/>
+						<img swiper-animate-delay="0.9s" swiper-animate-effect='slideInDown' class="ani thered" src="img/e880dd15-0695-401e-93a4-b11ac12b91bf-2841.png"/>
+						<img swiper-animate-delay="0.12s" swiper-animate-effect='fadeInUpBig' class="ani theree" src="img/f98ed8c6-4bb9-46f3-a940-1411b10743ef-8114.png"/>
+				</div>
+				
+				
+			</div>
+			<div class="swiper-pagination"></div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var mySwiper = new Swiper(".swiper-container",{
+			//竖屏
+			direction:'vertical',
+			//分页器
+			pagination: ".swiper-pagination",
+  		/*	//是否循环
+   		    loop:true,*/
+   		   
+			//点击分页器
+            paginationClickable:true,
+            
+             onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    		 swiperAnimateCache(swiper); //隐藏动画元素 
+    		 swiperAnimate(swiper); //初始化完成开始动画
+  			 }, 
+  			 onSlideChangeEnd: function(swiper){ 
+   			 swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+     		 } 
+            
+			
+		})
+	</script>
+</html>
